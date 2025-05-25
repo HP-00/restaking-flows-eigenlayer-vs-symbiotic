@@ -1,0 +1,69 @@
+# ─────────────────────────────
+#  Generic
+# ─────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+
+# ─────────────────────────────
+#  Python / Jupyter
+# ─────────────────────────────
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.pyd
+*.pyo
+.coverage
+htmlcov/
+.cache/
+.mypy_cache/
+.pytest_cache/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Jupyter runtime & history
+.jupyter/
+.ipython/
+
+# Virtual-envs
+venv/
+.env/
+.env.*        # e.g. .env.local, .env.dev
+
+# ─────────────────────────────
+#  Data & outputs
+# ─────────────────────────────
+# Large data or auto-generated CSVs will live in /data/ – ignore by default
+data/
+!data/README.md   # keep placeholder for docs
+
+# Notebook HTML exports or rendered PDFs (except the final report)
+*.html
+*.pdf
+!report/*.pdf     # keep final one-pager
+
+# Dune dashboard export artifacts
+dash/*.png
+dash/*.zip
+
+# ─────────────────────────────
+#  SQLFluff & lint caches
+# ─────────────────────────────
+.sqlfluff/
+
+# ─────────────────────────────
+#  OS-specific
+# ─────────────────────────────
+# macOS
+.Spotlight-V100
+.Trashes
+# Windows
+ehthumbs.db
+Desktop.ini
